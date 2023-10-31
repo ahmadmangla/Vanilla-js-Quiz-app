@@ -1,0 +1,44 @@
+body {
+  background: #6657ce;
+}
+
+h2 {
+  color: white;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 2px solid white;
+}
+
+.quiz-container input[type="radio"] {
+  visibility: hidden;
+}
+
+.quiz-container label {
+  outline: 2px solid white;
+  padding: 10px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+/* Applying styles when checking the buttons */
+.quiz-container input[type="radio"]:checked ~ label {
+  background-color: white;
+  border-color: #6657ce;
+  color: black;
+}
+
+.correct {
+  color: #4eff4e;
+}
+
+.incorrect {
+  color: #fb6464;
+}
