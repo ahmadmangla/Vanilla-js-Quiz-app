@@ -19,6 +19,15 @@ const data = [
   },
 ];
 
+const shuffleQuestions = () => {
+  for (let i = 0; i < data.length; i++) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [data[i], data[j]] = [data[j], data[i]];
+  }
+};
+
+shuffleQuestions();
+
 let userAnswersArr = [];
 const timeDisplay = document.getElementById("timer");
 const quizContainer = document.getElementById("quiz");
@@ -170,5 +179,6 @@ const resetQuiz = () => {
   timeDisplay.style.display = "block";
   totalQuestions.style.display = "block";
   answerDisplay.innerText = "";
+  shuffleQuestions();
   startQuiz();
 };
