@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "correctAnswer": "Dharma",
+      "incorrectAnswers": ["Dharma", "Nirvana", "Samsara"],
+      "question": "From the Sanskrit word for 'duty', what word refers to the teachings of the Buddha?"
+    },
+    {
+      "id": 2,
+      "correctAnswer": "Friedrich Schiller",
+      "incorrectAnswers": ["Sebastian Brant", "Friedrich Schiller", "Rainer Maria Rilke"],
+      "question": "Which author wrote 'William Tell'?"
+    },
+    {
+      "id": 3,
+      "correctAnswer": "Apple",
+      "incorrectAnswers": ["Orange", "Apple", "Banana"],
+      "question": "What Type Of Fruit Is A Russet?"
+    }
+  ]

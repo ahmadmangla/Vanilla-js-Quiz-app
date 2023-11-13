@@ -11,9 +11,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div id="progressBar"></div>
     <h1 id="title" class="fw-bold text-center text-white">Quiz</h1>
     <div class="container my-4 quiz-container mx-auto">
       <div class="time-remaining float-right d-flex justify-content-between">
@@ -23,6 +25,15 @@
       <div id="correctAnswerContainer"></div>
       <div id="quiz">
         <button class="btn btn-primary bg-white text-black border-0 fw-medium" id="startBtn">Start Quiz</button>
+      </div>
+      <button type="button" class="btn btn-primary d-none" id="liveToastBtn">Show live toast</button>
+      <div class="toast-container position-fixed top-0 mx-auto p-3 start-0 end-0">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body text-white fs-5 fw-medium">Hello, world! This is a toast message.</div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
       </div>
     </div>
     <script
